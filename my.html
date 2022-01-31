@@ -1,0 +1,899 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style5.css">
+    <link rel="stylesheet" href="un15.css">
+    <link rel="stylesheet" href="res1.css">
+    <style>
+      /* .w3-card-4{
+        margin-top: 10vh;;
+      }
+      p{
+        text-align: center;
+      } */
+    </style>
+    <title>Hello, world!</title>
+
+  </head>
+   <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Himalayan</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="my.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="about1.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="food.html">Resturent</a>
+              </li>
+              <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="ist.html">current time(IST)</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="status.html">check Your Status</a></li>
+                </ul>
+              </li> -->
+            
+              <li class="nav-item">
+                <a class="nav-link " href="contact.html">Tourism</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="hotel.html">Hotel</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="status.html">check_status</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="ist.html">current_time</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="about.html">contact us</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+
+          <div class="mx-2">
+            <!-- mx-2 matlab 2 ka margin diye x me -->
+            <!-- button.btn.btn-danger*2 -->
+           
+            <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button><button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#signupModal">Signup</button>
+            <!-- yha copy paste kiye dono me upar -->
+<!-- upar login aur signup karne ka form bna rahe hai -->
+
+        </div>
+        </div>
+      </nav>
+
+
+
+
+      <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="loginModalLabel">Login to Himalayan</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              
+                <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <!-- <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div> -->
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+                  <!-- goto forms for login and signup -->
+    
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ab sara example ki jagah login likh do -->
+      <!-- copy and paste from modal() -->
+    
+    
+      <!-- signup modal -->
+     <!-- Button trigger modal -->
+    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signupModal">
+        Launch demo modal
+      </button> -->
+      
+      <!-- Modal -->
+      <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="signupModalLabel">Create Account</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+    
+                    <div class="mb-3">
+                        <label for="cexampleInputPassword1" class="form-label">Confirm Password</label>
+                        <input type="password" class="form-control" id="cexampleInputPassword1">
+                      </div>
+                    <!-- <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div> -->
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="h1.jpg">
+          <!-- image lagao unsplace se -->
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Welcome To Himalayan Travellers</h2>
+            <p></p>
+            <button class="btn btn-danger">Food</button>
+            <button class="btn btn-primary">Rooms</button>
+            <button class="btn btn-success">Cars</button>
+  
+            <!-- button.btn.btn-danger*3 -->
+            <!-- yha button lagaye hai -->
+  
+          </div>
+        </div>
+
+        <div class="carousel-item ">
+          <img src="my1.jpg">
+          <!-- image lagao unsplace se -->
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Welcome To Himalayan Travellers</h2>
+            <p></p>
+            <button class="btn btn-danger">Food</button>
+            <button class="btn btn-primary">Rooms</button>
+            <button class="btn btn-success">Cars</button>
+  
+            <!-- button.btn.btn-danger*3 -->
+            <!-- yha button lagaye hai -->
+  
+          </div>
+        </div>
+
+        <div class="carousel-item ">
+          <img src="my4.jpg">
+          <!-- image lagao unsplace se -->
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Welcome To Himalayan Travellers</h2>
+            <p></p>
+            <button class="btn btn-danger">Food</button>
+            <button class="btn btn-primary">Rooms</button>
+            <button class="btn btn-success">Cars</button>
+  
+            <!-- button.btn.btn-danger*3 -->
+            <!-- yha button lagaye hai -->
+  
+          </div>
+        </div>
+
+        <div class="carousel-item ">
+          <img src="h4.jpg">
+          <!-- image lagao unsplace se -->
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Welcome To Himalayan Travellers</h2>
+            <p></p>
+            <button class="btn btn-danger">Food</button>
+            <button class="btn btn-primary">Rooms</button>
+            <button class="btn btn-success">Cars</button>
+  
+            <!-- button.btn.btn-danger*3 -->
+            <!-- yha button lagaye hai -->
+  
+          </div>
+        </div>
+       
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  
+  
+    <!-- copy carousel from components -->
+    
+  
+  
+  
+  
+      <!-- <div class="container">
+          <header class="blog-header py-3">
+            <div class="row flex-nowrap justify-content-between align-items-center">
+              <div class="col-4 pt-1">
+                <a class="link-secondary" href="#">Subscribe</a>
+              </div>
+              <div class="col-4 text-center">
+                <a class="blog-header-logo text-dark" href="#">Large</a>
+              </div>
+              <div class="col-4 d-flex justify-content-end align-items-center">
+                <a class="link-secondary" href="#" aria-label="Search">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24"><title>Search</title><circle cx="10.5" cy="10.5" r="7.5"></circle><path d="M21 21l-5.2-5.2"></path></svg>
+                </a>
+                <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a>
+              
+            </div> -->
+  
+  
+            <!-- <div class="container">
+              <header class="blog-header py-3">
+                <div class="row flex-nowrap justify-content-between align-items-center">
+                  <div class="col-4 pt-1">
+                    <a class="link-secondary" href="#">Subscribe</a>
+                  </div>
+                  <div class="col-4 text-center">
+                    <a class="blog-header-logo text-dark" href="#">Large</a>
+                  </div>
+                  <div class="col-4 d-flex justify-content-end align-items-center">
+                    <a class="link-secondary" href="#" aria-label="Search">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24"><title>Search</title><circle cx="10.5" cy="10.5" r="7.5"></circle><path d="M21 21l-5.2-5.2"></path></svg>
+                    </a>
+                    <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a>
+                  </div>
+                </div>
+              </header>
+            
+              <div class="nav-scroller py-1 mb-2">
+                <nav class="nav d-flex justify-content-between">
+                  <a class="p-2 link-secondary" href="#">World</a>
+                  <a class="p-2 link-secondary" href="#">U.S.</a>
+                  <a class="p-2 link-secondary" href="#">Technology</a>
+                  <a class="p-2 link-secondary" href="#">Design</a>
+                  <a class="p-2 link-secondary" href="#">Culture</a>
+                  <a class="p-2 link-secondary" href="#">Business</a>
+                  <a class="p-2 link-secondary" href="#">Politics</a>
+                  <a class="p-2 link-secondary" href="#">Opinion</a>
+                  <a class="p-2 link-secondary" href="#">Science</a>
+                  <a class="p-2 link-secondary" href="#">Health</a>
+                  <a class="p-2 link-secondary" href="#">Style</a>
+                  <a class="p-2 link-secondary" href="#">Travel</a>
+                </nav>
+              </div>
+            </div>
+  
+  
+              -->
+          
+        
+          <!-- <div class="nav-scroller py-1 mb-2">
+            <nav class="nav d-flex justify-content-between">
+              <a class="p-2 link-secondary" href="#">World</a>
+              <a class="p-2 link-secondary" href="#">U.S.</a>
+              <a class="p-2 link-secondary" href="#">Technology</a>
+              <a class="p-2 link-secondary" href="#">Design</a>
+              <a class="p-2 link-secondary" href="#">Culture</a>
+              <a class="p-2 link-secondary" href="#">Business</a>
+              <a class="p-2 link-secondary" href="#">Politics</a>
+              <a class="p-2 link-secondary" href="#">Opinion</a>
+              <a class="p-2 link-secondary" href="#">Science</a>
+              <a class="p-2 link-secondary" href="#">Health</a>
+              <a class="p-2 link-secondary" href="#">Style</a>
+              <a class="p-2 link-secondary" href="#">Travel</a>
+            </nav>
+          </div>
+        </div>
+   --> 
+  <!-- <div class="container">
+  <link rel="stylesheet" href="https://getbootstrap.com/docs/5.1/examples/blog/#">
+  <link rel="stylesheet" href="https://getbootstrap.com/docs/5.1/examples/blog/#">
+  </div> -->
+  <div>
+    <div class="card slide">
+    <h2 class="my-2">Tourisum</h2>
+
+    <div class="cards">
+        <div class="a1">
+    <div class="card-items">
+        <img src="tour1.jpg" alt="">
+    
+    
+    <div class="lines">
+
+<p class="text-center my-1">Hills</p>
+
+    </div>
+</div>
+
+</div>
+
+
+<div class="">
+
+</div>
+
+  
+      <div class="a1 ">
+  <div class="card-items">
+      <img src="tour2.jpg" alt="">
+  
+  
+  <div class="lines">
+
+<p class="text-center my-1">River</p>
+
+  </div>
+</div>
+
+</div>
+
+<div class="a1">
+  <div class="card-items">
+      <img src="tour3.jpg" alt="">
+  
+  
+  <div class="lines">
+
+<p class="text-center my-1">Glacier</p>
+
+  </div>
+</div>
+
+</div>
+
+
+<div class="a1">
+  <div class="card-items">
+      <img src="tour4.jpg" alt="">
+  
+  
+  <div class="lines">
+
+<p class="text-center my-1">Forest</p>
+
+  </div>
+</div>
+
+</div>
+
+<div class="a1">
+  <div class="card-items">
+      <img src="tour5.jpg" alt="">
+  
+  
+  <div class="lines">
+
+<p class="text-center my-1">Waterfall</p>
+
+ 
+  </div>
+</div>
+
+</div>
+
+<div class="a1">
+  <div class="card-items">
+      <img src="tour6.jpg" alt="">
+  
+  
+  <div class="lines">
+
+<p class="text-center my-1">Road</p>
+
+ 
+  </div>
+</div>
+
+</div>
+
+
+<div class="a1">
+  <div class="card-items">
+      <img src="tour7.jpg" alt="">
+  
+  
+  <div class="lines">
+
+<p class="text-center my-1">Desert</p>
+
+ 
+ 
+
+ 
+  </div>
+</div>
+
+</div>
+  </div>
+</div>
+
+</div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div>
+    <div class="card slide">
+    <h2 class="my-2">Hotel</h2>
+
+    <div class="cards">
+        <div class="a1">
+    <div class="card-items">
+        <img src="hotel1.jpg" alt="">
+    
+    
+    <div class="lines">
+
+<p class="text-center my-1">reception</p>
+
+    </div>
+</div>
+
+</div>
+
+
+<div class="">
+
+</div>
+
+  
+      <div class="a1 ">
+  <div class="card-items">
+      <img src="hotel2.jpg" alt="">
+  
+  
+  <div class="lines">
+
+<p class="text-center my-1">Room</p>
+
+  </div>
+</div>
+
+</div>
+
+<div class="a1">
+  <div class="card-items">
+      <img src="hotel3.jpg" alt="">
+  
+  
+  <div class="lines">
+
+<p class="text-center my-1">Lift</p>
+
+  </div>
+</div>
+
+</div>
+
+
+<div class="a1">
+  <div class="card-items">
+      <img src="hotel4.jpg" alt="">
+  
+  
+  <div class="lines">
+
+<p class="text-center my-1">Door</p>
+
+  </div>
+</div>
+
+</div>
+
+<div class="a1">
+  <div class="card-items">
+      <img src="hotel5.jpg" alt="">
+  
+  
+  <div class="lines">
+
+<p class="text-center my-1">Bed</p>
+
+ </div>
+</div>
+
+</div>
+<div class="a1">
+  <div class="card-items">
+      <img src="hotel6.jpg" alt="">
+  
+  
+  <div class="lines">
+
+<p class="text-center my-1">kichen</p>
+
+ 
+ 
+
+ 
+  </div>
+</div>
+
+</div>
+<div class="a1">
+  <div class="card-items">
+      <img src="hotel7.jpg" alt="">
+  
+  
+  <div class="lines">
+
+<p class="text-center my-1">Lamp</p>
+
+ 
+ 
+
+ 
+  </div>
+</div>
+
+</div>
+
+  </div>
+</div>
+
+</div>
+  </div>
+  
+   
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div>
+    <div class="card slide">
+    <h2 class="my-2">Resturent</h2>
+
+    <div class="cards">
+        <div class="a1">
+    <div class="card-items">
+        <img src="rest1.jpg" alt="">
+    
+    
+    <div class="lines">
+
+<p class="text-center my-1">coffee</p>
+
+    </div>
+</div>
+
+</div>
+
+
+<div class="">
+
+</div>
+
+  
+      <div class="a1 ">
+  <div class="card-items">
+      <img src="rest2.jpg" alt="">
+  
+  
+  <div class="lines">
+
+<p class="text-center my-1">Pizza</p>
+
+  </div>
+</div>
+
+</div>
+
+<div class="a1">
+  <div class="card-items">
+      <img src="rest3.jpg" alt="">
+  
+  
+  <div class="lines">
+
+<p class="text-center my-1">Burger</p>
+
+  </div>
+</div>
+
+</div>
+
+
+<div class="a1">
+  <div class="card-items">
+      <img src="rest4.jpg" alt="">
+  
+  
+  <div class="lines">
+
+<p class="text-center my-1">Chicken</p>
+
+  </div>
+</div>
+
+</div>
+
+<div class="a1">
+  <div class="card-items">
+      <img src="rest5.jpg" alt="">
+  
+  
+  <div class="lines">
+
+<p class="text-center my-1">Milk</p>
+
+ </div>
+</div>
+
+</div>
+<div class="a1">
+  <div class="card-items">
+      <img src="rest6.jpg" alt="">
+  
+  
+  <div class="lines">
+
+<p class="text-center my-1">Paneer</p>
+
+ 
+ 
+
+ 
+  </div>
+</div>
+
+</div>
+<div class="a1">
+  <div class="card-items">
+      <img src="rest7.jpg" alt="">
+  
+  
+  <div class="lines">
+
+<p class="text-center my-1">Rice</p>
+
+ 
+ 
+
+ 
+  </div>
+</div>
+
+</div>
+
+  </div>
+</div>
+
+</div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div>
+    <div class="card slide">
+    <h2 class="my-2">Vehicles</h2>
+
+    <div class="cards">
+        <div class="a1">
+    <div class="card-items">
+        <img src="v1.jpg" alt="">
+    
+    
+    <div class="lines">
+
+<p class="text-center my-1">Car</p>
+
+    </div>
+</div>
+
+</div>
+
+
+<div class="">
+
+</div>
+
+  
+      <div class="a1 ">
+  <div class="card-items">
+      <img src="v2.jpg" alt="">
+  
+  
+  <div class="lines">
+
+<p class="text-center my-1">Fortuner</p>
+
+  </div>
+</div>
+
+</div>
+
+<div class="a1">
+  <div class="card-items">
+      <img src="v3.jpg" alt="">
+  
+  
+  <div class="lines">
+
+<p class="text-center my-1">Helicopter</p>
+
+  </div>
+</div>
+
+</div>
+
+
+<div class="a1">
+  <div class="card-items">
+      <img src="v4.jpg" alt="">
+  
+  
+  <div class="lines">
+
+<p class="text-center my-1">Rail</p>
+
+  </div>
+</div>
+
+</div>
+
+<div class="a1">
+  <div class="card-items">
+      <img src="v5.jpg" alt="">
+  
+  
+  <div class="lines">
+
+<p class="text-center my-1">Aeroplane</p>
+
+ </div>
+</div>
+
+</div>
+<div class="a1">
+  <div class="card-items">
+      <img src="v6.jpg" alt="">
+  
+  
+  <div class="lines">
+
+<p class="text-center my-1">Ship</p>
+
+ 
+ 
+
+ 
+  </div>
+</div>
+
+</div>
+<div class="a1">
+  <div class="card-items">
+      <img src="v7.jpg" alt="">
+  
+  
+  <div class="lines">
+
+<p class="text-center my-1">Submarine</p>
+
+ 
+ 
+
+ 
+  </div>
+</div>
+
+</div>
+
+  </div>
+</div>
+
+</div>
+  </div>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
+
+
+
+
+
+
+
+
+

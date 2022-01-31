@@ -1,0 +1,47 @@
+/* media querey hi sab changes karta hai */
+/* humlog aisa kar rahe hai kyuki jab screen chhota ho rha hai tab responsiveness kharab ho ja rha ha to media querey ki help se 1000 ke nichhe par ye sare gun lga rhe hai taki jab screen chhota ho jaye tab iske anusar dikhe aur ye sab tab hi apply hoga jab screen 1000px se kam wale device me chalega */
+@media screen and (max-width:1000px){
+    /* jab max width 925 ho jayega tab ye changes kar dena , 925 hi chune kyuki 925px ke baad website ka responsivness kharab ho ja rha hai */
+            /* body{
+                background-color: red; */
+                /* pta chalega ki media querey kaam bhi kar rhi hai ya nhi  */
+
+
+            /* } */
+            nav{
+                flex-direction: column;
+                /* searchbar aur seach niche aa gya */
+            }
+            .slider{
+                height: 23vh;
+                /*  */
+            }
+            .logo{
+                      justify-content: center;
+                      /* logo bich me aa gya to screen chhota karne par wo gayab nhi hoga */
+                      margin: 12px 0;
+                      /* logo ko margin diye taki upar se gap mile aur legt righr se 0 ka gap mile kyuki left righr se bich me hi hai */
+            }
+            nav ul{
+                justify-content: center;
+                /* home about contact us sab bich me aa gya matlab sab chhota ho gya screen chhota karne par wo gayab nhi hoga matlab katega nhi  */
+            }
+            .search{
+                justify-content: center;
+                /* search ka button centre me aa jayega jisse jab chhota ho jayega screen*/
+            }
+            .search input{
+                margin: 12px 16px;
+                
+            }
+            nav ul{
+                height:34px;
+                /* bda ho gya ul me jo jo tha uska box ul me kya kya tha (see ffrom index8.html)*/
+            }
+            .card-item img{
+                width: 140px;
+                /* image sara chhota ho gya */
+
+            }
+            /* see in index8.html ki kisme kya kya hai kya kya  kar rhe hai aur kya badlaw hua */
+}

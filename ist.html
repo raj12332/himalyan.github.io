@@ -1,0 +1,175 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="style5.css">
+    <link rel="stylesheet" href="un15.css">
+    <link rel="stylesheet" href="res1.css"> -->
+    <title>Check Your Aproval Status</title>
+  </head>
+
+
+
+  <style>
+      *{
+          margin: 0;
+          padding: 0;
+      }
+    .container{
+        font-size:23 px;
+        background-color: rgb(245, 6, 6);
+        border:2px solid greenyellow;
+        padding: 34px;
+        margin:4px;
+        text-align: center;
+        width:1800px;
+       
+    }
+    #time{
+        font-weight: bold;
+    }
+    body{
+        background-image: url("https://source.unsplash.com/1600x1060/?clock");
+    }
+</style>
+  <body>
+    
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Himalayan</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="my.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="about1.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="food.html">Resturent</a>
+              </li>
+              <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item"href="#">Action</a></li>
+                  <li><a class="dropdown-item active" href="ist.html">current time(IST)</a></li>
+                   <li><hr class="dropdown-divider"></li> -->
+                  <!-- <li><a class="dropdown-item"href="status.html">Check Your Status</a></li>
+                </ul>
+              </li> --> 
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Tourisum</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="hotel.html">Hotel</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="status.html">check_status</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="ist.html">current_time</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  " aria-current="page" href="about.html">contact us</a>
+              </li>
+            </ul>
+            <!-- <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form> -->
+          </div>
+        </div>
+      </nav>
+
+
+      <div class="container">
+        
+        current time is <span id="time"></span>
+    </div>
+
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+      <script>
+        // console.log("This is date and time tutorial");
+        // // jo bhi javascript ka chij likhna hai usko script me likho aur output hamesa console me aata hai inspect karke dekh lo
+        // let now=new Date();
+        // // yha date  object hai aur pura line constructor 
+        // // yha hum Date ke fn. me kuchh nhi likha hai to wo current time aur date bta rha hai
+        // console.log(now);
+
+        // let dt=new Date(0);
+        // console.log(dt);
+        // // 0 karne par ye date bta rha hai kyuki reference (suruwat )whi se le rha hai javascript time and date ka
+        // // Thu
+        // //  Jan 01 1970 
+        // //  05:30:00 se reference mana gya hai byy javascript
+        // // javascript me 1 sec matlab 1000 hota hai
+
+
+        // let dt1=new Date(1000);
+        // console.log(dt1);
+        // // matlab reference se 1 sec baad ka samay liya gya hai
+
+        // let dt2=new Date(10);
+        // console.log(dt2);
+        // matlab reference se 1 mili sec baad ka samay liya gya hai
+        // let newDate= new Date("2029-09-30");
+        // console.log(newDate);
+        // // let bq=new Date(year,month,date,hours,minutes,seconds,milliseconds)
+        // let newDate1=new Date(3020,4,6,9,3,2,34);
+        // console.log(newDate1);
+
+
+        // let yr=newDate.getFullYear();
+        // console.log("The Year is ",yr);
+
+        // let dat=newDate.getDate();
+        // console.log("The date is ",dat);
+
+        // let mon=newDate.getMonth();
+        // console.log("The month is ",mon);
+
+        // let hrs=newDate.getHours();
+        // console.log("The hour is ",hrs);
+
+        // newDate.setDate(15);
+        // console.log(newDate);
+
+// write Date.now()  in console and press enter
+// you will see a very big digit , this number is called   Jan 01 1970 
+        //  05:30:00 se abhi tak kitna milli second bit chuka hai wo print karta hai iska kaam tab aata hai jab hamme 2 samay ke bich ka milli second pta karna ho matlab hum phir se Date.now() likh denge aur press karenge aur abhi ka aaya hua bda number me se 59 line wala me aaya hua bda no. ko ghta denge to en 2 samay ke bich ka milli second pta chal jayega 
+
+        // newDate.setDate(32);
+        // matlab 30 sep (last of september is 30 so 30 se liye)se 2 din aage 2 october
+        // console.log(newDate);
+
+        // newDate.setDate(8);
+        // newDate.setMinutes(29);
+        // console.log(newDate);
+
+        setInterval(updateTime, 1000);
+            function updateTime(){
+                time.innerHTML=new Date();
+            }
+        
+
+       
+
+    </script>
+</body>
+</html>

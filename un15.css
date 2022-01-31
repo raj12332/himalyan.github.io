@@ -1,0 +1,31 @@
+.flex-all-centre{
+    display: flex;
+    justify-content: center;
+   align-items: center;
+   /* taki copyright likha hua centre me aa jaye box ke */
+}
+.btn{
+    padding: 5px 10px;
+    /* search ko bda kar rha hai */
+    color: white;
+    background-color: var(--main-bg-color);
+    /*  */
+    border: 2px solid white;
+    border-radius: 12px;
+    cursor: pointer;
+    /* isse search par jane se tir hath ban jayega */
+}
+.btn:hover{
+    color: rgb(48, 2, 253);
+    font-style: italic;
+    /* search par tir le jane par ye sab change hoga */
+}
+.my-1{
+    margin: 5px 0;
+}
+.my-2{
+    margin: 26px 0;
+}
+.text-center{
+    text-align: centre;
+}

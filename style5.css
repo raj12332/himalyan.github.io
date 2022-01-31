@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap');
+/* css me direct import kar diye google font search karke link ko ye text ko style dega import par tick karke copy kar lo */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+/* ek baar me hum jitna chahe utna google font lga sakt hai sara set ho jayega */
+:root {
+    --main-bg-color: rgb(224, 50, 50);
+    /* main background colour hai */
+    /* isse ye fayda hua ki hum ek bar me hi saara box jisme jisme main bg colour diye hai sara ka colour ek saath change kar sakte hai (use to convert dark to white mode and visa versa) aur chahe to button lagake ek baar button par tipenge to dark mode se white mode me hmara website aajayega, (with help of css button lagayenge )*/
+  }
+  /* css variable MDN se liye root ko  */
+  
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    height: 58px;
+    background-color: var(--main-bg-color);
+    /* main bg color lagaye hai jo upar hai jisko hum brown kiye hai */
+    /* border: 2px solid red; */
+    font-family: 'Bonheur Royale', cursive;
+    font-size: 38px;
+    /* home about contact us ko bda kiye */
+}
+nav{
+    display: flex;
+    /* isse logo ke line me home about contact us aa jayega */
+
+}
+.logo{
+    display: flex;
+    /* niche wala likhne ke liye upar wala likhe */
+    align-items: center;
+    /* isse flipkart centre me aa jayega */
+}
+.logo img{
+    width: 88px;
+    /* image ko size diye */
+    padding: 0 25px;
+    /* matlab flipkart ko thoda side me kar diye */
+}
+nav ul{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* taki home about contact us start me aur centre me aa jaye  */
+    height: 58px;
+
+}
+nav ul li{
+    list-style: none;
+    /* taki bindu hat jaye home about contact us par se */
+    padding: 0 23px;
+    /* taki home about contact us ke bich gap rhe (23px ka) */
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    /* taki underline hat jaye niche wala of home about contact us */
+}
+nav ul li a:hover{
+    color: rgb(96, 2, 248);
+    font-weight: bold;
+    /* agar koi nav ke ul ke li ke a par koi apna tir le jaye to uska color blue kar do aur text ko bold kar do */
+
+}
+.search{
+    display: flex;
+    /* niche wala likhne ke liye upar wala likhe */
+    align-items: center;
+    /* search bar centre me aa gya */
+}
+.search input{
+    /* width: 493px; */
+    width: 30vw;
+    /* width ko 493px se 30vw bna diya jisse hmara website responsive ban gya kyuki size px me na dekar vw ya vh me do jisse site responsive ban sake (use vh for height and vw for width) */
+    height: 27px;
+    /* search bar ka size itna rakho */
+    border-radius: 12px;
+    margin: 0 16px 0 56px;
+    /* isse searchbar thoda(56px) right me chal gya  aur search 16 px left me chla gya*/
+    padding: 0 12px;
+    /* search ko idhar udhar karne ke liye  */
+}
+.search button{
+    font-family: 'Bonheur Royale', cursive;
+    font-size: 24px;
+    /* seach ka box 24px ka ho gya */
+    font-weight: 900;
+    /* search likha hua mota ho gya */
+}
+.slider{
+    /* margin: auto; */
+    /* isse image bich me aa jayega*/
+    width: 80vw;
+    /* image ka size set kiye */
+    margin: 12px 0;
+     /* isse image bich me aa jayega*/
+     /* overflow: hidden; */
+     /* website responsive */
+}
+.card{
+    max-width: 91vw;
+    /* join the cricket ke niche ek box bnaye hai uska size hai taki hum usme kuchh kuchh rakh sake */
+    margin: auto;
+    /* isse image bich me aa jayega */
+    background-color: rgb(250, 250, 237);
+    /* font-family: 'Pacifico', cursive; */
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    /* grab now ko ek niche lane ke liye */
+    /* align-items: center; */
+    overflow: hidden;
+    /* isse agar koi bhi image overflow( kat kar last me ) hogi to wo thik ho jayegi */
+    
+}
+/* .lines{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+
+} */
+.a1{
+    margin-left: 32px;
+}
+.a2{
+    margin-left:32px;
+    /* image ke bichh me gap */
+}
+.a3{
+    margin-left: 52px;
+
+}
+.a4{
+    margin-left: 52px;
+}
+ .card-item{
+    display:inline-flex;
+    justify-content: center;
+    flex-direction:column;
+     margin: 0 15px; 
+
+    /* images ke bich me gap */
+
+ }
+.card h2{
+    font-family: 'Pacifico', cursive;
+}
+.container{
+    min-height: calc(100vh - 58px - 12vh);
+    /* matlab container jo khali hai jo home about contact us aur copyright ke bich me hai uska height pure height me se header(jisme home about contact us hai) aur footer(jisme copyright hai) ka height ghta do */
+    /* isse ye fayda hua ki copyright ka box footer sabse niche chla gya */
+}
+
+footer{
+    height: 12vh;
+    background-color: var(--main-bg-color);
+    color: white;
+    font-family: 'Bonheur Royale', cursive;
+    
+    /* likhne ka style diye */
+    font-size: 40px;
+    /* copyright ko bda kiye */
+}
